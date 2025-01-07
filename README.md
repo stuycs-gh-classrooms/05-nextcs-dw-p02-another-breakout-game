@@ -4,7 +4,7 @@
 ---
 
 ### Project Description
-This project aims to recreate the basic concept of the game, "Idle Breakout", involving a ball that bounces off 'bricks'. When the ball makes contact with a brick, one can then use the money gained from 'damaging' a brick (with a 1:1 damage to money ratio) to purchase more balls. The player can additionally directly support the brick breaking game by using the mouse to click on the bricks, producing the same damage effect.
+This project aims to recreate the basic concept of the game, "Idle Breakout", involving a ball that bounces off 'bricks'. When the ball makes contact with a brick, one can then use the money gained from 'damaging' a brick (with a 1:1 damage to money ratio) to purchase more balls. The player can additionally directly support the brick breaking game by using the mouse to click on the bricks, producing the same damage effect. Refer to https://idle-breakout.neocities.org/ as an example. 
 
 ### Skill Usage
 Skills used:
