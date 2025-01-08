@@ -13,6 +13,7 @@ Skills used:
 - Data Structures:
   -  2d Array: Brick Layout(s)
   -  1d Array: Damage levels? (doable with instance variables...)
+- Event listeners
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
