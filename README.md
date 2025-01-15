@@ -13,6 +13,7 @@ Skills used:
 - Data Structures:
   -  2d Array: Brick Layout(s)
   -  1d Array: Damage levels? (doable with instance variables...)
+- Event listeners
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
@@ -26,8 +27,8 @@ Keyboard Commands:
 Mouse Control:
 - Mouse movement: N/A
 - Mouse pressed:
-  - On brick: deals click damage
-  - On purchase box: subtracts labeled purchase cost from total money, increases by some factor, makes new instance of the corresponding ball in center. 
+  - On brick: deals click damage. Brick then redisplays current health. If negative or = 0, brick disappears.
+  - On purchase box: subtracts labeled purchase cost from total money, increases by some factor, makes new instance of the corresponding ball in center. Redisplay new price tag.
 
 
 ### Classes
