@@ -1,19 +1,46 @@
 class Grids{
   //int layout;//randomly decide a type of layout: pillars, square, and rows (0-2)
-  //the top y = 50 is reserved for upgrades.
-  Layout[][] Grids;
-  Grids(int shape){
-    Layout = new Grid[width/25][height/100];//note: don't generate in y <= 10. [x][10]
-    generate(shape);
+  Brick[][] Layout;
+  Grids(int shape, int level){
+    Layout = new Brick[width/25][height/50];
+    generate(shape, level);
   }
   
   Grids(){
   }
   
-  void generate(int shape){
-    if(shape = ROWS){//every other row(after the 
-      for(int r = 11; i % 
-      
-      
+  void generate(int shape, int level){
+    if(shape == ROWS){//every other row(after the 
+      for(int r = 0; r < Layout.length; r++){
+        for(int c = 0; c < Layout[r].length; c++){
+          if(r % 2 == 0){
+            Layout[r][c] = new Brick(width/25 * r,height/50 * c, level);
+          }
+        }
+      }
+    }
+    if(shape == PILLARS){
+      for(int r = 0; r < Layout.length; r++){
+        for(int c = 0; c < Layout[r].length; c++){
+          if(c % 2 == 0){
+            Layout[r][c] = new Brick(width/25 * r,height/50 * c, level);
+          }
+        }
+      }
+    }
+    if(shape == BIGSQUARE){
+      for(int r = 0; r < Layout.length; r++){
+          if(r >= 5 && r <= 15){
+            for(int c = 0; c < Layout[r].length; c++){
+              if(c >= 3 && c <= 7){
+                 Layout[r][c] = new Brick(width/25 * r,height/50 * c, level);
+              }
+            }
+          }
+      }
+    }
   }
+      
+      
+
 }
