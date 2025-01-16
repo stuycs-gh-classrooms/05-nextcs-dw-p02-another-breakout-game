@@ -28,7 +28,7 @@ class Grids{
         }
       }
     }
-    if(shape == BIGSQUARE){
+    if(shape == BIGSQUARE){r
       for(int r = 0; r < Layout.length; r++){
           if(r >= 5 && r <= 15){
             for(int c = 0; c < Layout[r].length; c++){
