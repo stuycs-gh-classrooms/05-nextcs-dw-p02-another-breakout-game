@@ -1,7 +1,7 @@
 class Ball{
   PVector center;
-  int xspeed;
-  int yspeed;
+  int xspeed = 1;
+  int yspeed = 1;
   Ball(PVector c){
     center = new PVector(c.x, c.y);
   }
@@ -20,6 +20,12 @@ class Ball{
      center.x+= xspeed;
      center.y+= yspeed;
   }
+  
+  void collisionCheck(Brick other) {
+    if(this.center.dist(other.center)  <= 40){
+      other.hit();
+    };
+  }//collisionCheck
   
   
   

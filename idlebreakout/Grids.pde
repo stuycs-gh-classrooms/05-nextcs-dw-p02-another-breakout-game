@@ -38,5 +38,16 @@ class Grids{
         }
       }
     }
-
+ /*boolean processCollisions(Ball p) {
+    boolean hit = false;
+    for (int r=0; r<Layout.length; r++) {
+      for (int c=0; c<Layout[r].length; c++) {
+        if (Layout[r][c] != null && p.collisionCheck(Layout[r][c])) {
+          Layout[r][c] = null;
+          hit = true;
+        }//collide!
+      }//columns
+    }//rows
+    return hit;
+  }//processCollisions*/
 }
