@@ -29,7 +29,14 @@ class Grids{
       }
     }
   }
-      
-      
+  void display(){
+    for(int r = 0; r < Layout.length; r++){
+        for(int c = 0; c < Layout[r].length; c++){
+          if(Layout[r][c] != null){
+              Layout[r][c].display();
+          }
+        }
+      }
+    }
 
 }
