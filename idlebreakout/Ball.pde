@@ -1,11 +1,16 @@
 class Ball{
-  int type;
+  PVector center;
+  int xspeed;
+  int yspeed;
   int bsize;
-  int xyspeed;
-  Ball(int t){
-    type = t;
+  Ball(PVector c, int s){
+    bsize = s;
+    center = new PVector(c.x, c.y);
   }
   
+  void display(){
+    circle(width/2,height/2, 8);
+  }
   
   
   
