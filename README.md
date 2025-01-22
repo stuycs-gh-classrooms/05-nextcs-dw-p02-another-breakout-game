@@ -4,7 +4,7 @@
 ---
 
 ### Project Description
-This project aims to recreate the basic concept of the game, "Minesweeper", 
+This project aims to recreate the basic concept of the game, "Minesweeper". 
 
 ### Skill Usage
 Skills used:
@@ -20,27 +20,19 @@ Skills used:
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- Keys 1-3:
-    - Purchases a ball without needing to click.
-- E: (TBD)
-    - Opens up upgrade screen?
+- r
+  - Resets the play area.
 
 Mouse Control:
 - Mouse movement: N/A
-- Mouse pressed:
-  - On brick: deals click damage. Brick then redisplays current health. If negative or = 0, brick disappears.
-  - On purchase box: subtracts labeled purchase cost from total money, increases by some factor, makes new instance of the corresponding ball in center. Redisplay new price tag.
+- Mouse click:
+  - RMB: makes a flag;
+  - LMB: reveals tile. Lose if this is a mine;
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
-- Ball Class:
-  - Variables:
-      - Speed
-      - Size
-      - Type (also determines color)
-- BrickGrid (TBD)
-  - Contains different layouts of bricks
-- Brick Subclass (required)
-    - Health
-    - Color (TBD)
+- mineField
+- patch
+  - State (mine)
+  - flagged
