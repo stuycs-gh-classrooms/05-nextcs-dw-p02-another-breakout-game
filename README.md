@@ -4,16 +4,17 @@
 ---
 
 ### Project Description
-This project aims to recreate the basic concept of the game, "Idle Breakout", involving a ball that bounces off 'bricks'. When the ball makes contact with a brick, one can then use the money gained from 'damaging' a brick (with a 1:1 damage to money ratio) to purchase more balls. The player can additionally directly support the brick breaking game by using the mouse to click on the bricks, producing the same damage effect. Refer to https://idle-breakout.neocities.org/ as an example. 
+This project aims to recreate the basic concept of the game, "Minesweeper", 
 
 ### Skill Usage
 Skills used:
 - Classes:
-  - Balls, Bricks
+  - mineField, patch
 - Data Structures:
-  -  2d Array: Brick Layout(s)
-  -  1d Array: Damage levels? (doable with instance variables...)
+  -  2d Array: mineField
+  -  1d Array: Checking for mines
 - Event listeners
+-   mouse click
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
